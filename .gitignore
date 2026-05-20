@@ -1,0 +1,5 @@
+# Ignorar banco de dados biométrico
+biometrico.db
+
+# Ignorar pasta de modelos faciais
+modelos_faciais/
