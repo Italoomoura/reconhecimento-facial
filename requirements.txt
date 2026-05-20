@@ -1,0 +1,29 @@
+# =============================================================================
+#  SISTEMA DE AUTENTICAÇÃO BIOMÉTRICA — UNIP APS CC 2025/2
+#  requirements.txt
+# =============================================================================
+#
+#  Instalar tudo de uma vez:
+#      pip install -r requirements.txt
+#
+#  ATENÇÃO: NÃO instale opencv-python junto com opencv-contrib-python.
+#  Se já tiver o opencv-python instalado, remova antes:
+#      pip uninstall opencv-python -y
+#      pip install -r requirements.txt
+#
+#  Python mínimo recomendado: 3.10+
+#  Tkinter já vem com o Python — se faltar, instale pelo SO:
+#      Windows : já incluso no instalador oficial do Python
+#      Ubuntu  : sudo apt install python3-tk
+#      macOS   : brew install python-tk
+# =============================================================================
+
+# Visão computacional — inclui cv2.face (LBPH) necessário para biometria
+# NÃO use opencv-python; apenas esta versão contém o módulo cv2.face
+opencv-contrib-python>=4.8.0
+
+# Processamento de imagem para exibir frames do OpenCV no Tkinter
+Pillow>=10.0.0
+
+# Álgebra linear — usado internamente pelo OpenCV (geralmente já instalado)
+numpy>=1.24.0
